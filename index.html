@@ -4,17 +4,25 @@
      <div>      
 <title>DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.</title>
 
-<script type="text/JavaScript" src="index.js"></script> 
-<link rel="stylesheet" href="index.css">
-<style href="index.css"></style>
+
      </div>
 </head>
 <body>
+
+        <script type="text/JavaScript" src="index.js"></script> 
+        <link rel="stylesheet" href="index.css">
+        <style href="index.css"></style>
+
     <div>
 <h1>DOM learning and applying in JavaScript</h1>
 
 <div id ="titletwo"></div>
+
+<button onclick="heading2()">Press Here to have heading 2</button>
+
 <div id="titlethree"></div>
+
+<button onclick="heading3()">Press here to have heading 3</button>
 
 <div id ="myList">
 
@@ -48,58 +56,10 @@
 
 </ul>
 
- </div>   
+</div>
 
- <button onclick="erase()">Eliminate what Item from list is not important</button>
-
-    <script>
-
-var message = document.createElement("h2");
-var nodo = document.createTextNode("What important is learn Grammar as one of the most important thing");
-
-message.appendChild(nodo);
-document.getElementById("titletwo").appendChild(message);
-
-
-var second = document.createElement("h3");
-var figure = document.createTextNode("Something that I do not Understand");
-
-second.appendChild(figure);
-document.getElementById("titlethree").appendChild(second);
-
-
+ <button onclick="erase()">Eliminate what Item from list is not important</butto>
     
-const myList = document.getElementById('myList');
-const pearsItem = document.getElementById('pearsItem');
-
-console.log(myList);
-console.log(pearsItem);
-
-const orangesItem = document.createElement('p');
-orangesItem.textContent = '2._What is happening here with our language?';
-
-myList.insertBefore(orangesItem, pearsItem);
-
-var stepone = document.createElement('li');
-var vocabulary = document.createTextNode('Vocabulary');
-stepone.appendChild(vocabulary);
-
-var element = document.getElementById('languageAcqui');
-var child = document.getElementById('stepfour');
-element.insertBefore(stepone, child);
-
-
-function erase(){
-
-    var desappear = document.getElementById('stepone');
-    
-    desappear.remove();
-}
-
-
-    </script>
-
-
 </body>
 
 </html>
