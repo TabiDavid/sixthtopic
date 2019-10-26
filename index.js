@@ -18,7 +18,6 @@ document.getElementById("titlethree").appendChild(second);
 
 };
 
-
 function parragraph(){
 
     const myList = document.getElementById('myList');
